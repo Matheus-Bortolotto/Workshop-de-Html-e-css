@@ -1,104 +1,167 @@
-
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Aula 14 </title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Loja de periféricos gamers">
+  <meta name="author" content="Seu Nome">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>Loja de Periféricos Gamers</title>
+  <style>
+    body {
+      transition: background-color 0.3s, color 0.3s;
+      background-color: #f0f0f0;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      color: #f8f9fa;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #adb5bd;
+    }
+    .jumbotron {
+      background: url('https://via.placeholder.com/1200x400/000000/ffffff?text=Gaming+Peripherals') no-repeat center center;
+      background-size: cover;
+      color: #ffffff;
+      text-align: center;
+    }
+    .jumbotron h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .jumbotron p {
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #00408d;
+    }
+    .btn-secondary {
+      background-color: #6c757d;
+      border-color: #6c757d;
+    }
+    .btn-secondary:hover {
+      background-color: #5a6268;
+      border-color: #545b62;
+    }
+    .btn-dark-mode {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+    }
+    .dark-mode {
+      background-color: #343a40;
+      color: #f8f9fa;
+    }
+    .dark-mode .navbar-dark .navbar-nav .nav-link {
+      color: #f8f9fa;
+    }
+    .dark-mode .jumbotron {
+      background: url('https://via.placeholder.com/1200x400/000000/ffffff?text=Gaming+Peripherals') no-repeat center center;
+      background-size: cover;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
 
-    <!-- Principal CSS do Bootstrap -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">GameGear</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(atual)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Produtos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre nós</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contato</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ofertas</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Descontos</a>
+            <a class="dropdown-item" href="#">Novidades</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+      </form>
+    </div>
+    <button class="btn btn-dark-mode btn-light" onclick="toggleDarkMode()">🌙</button>
+  </nav>
 
-    <!-- Estilos customizados para esse template -->
-    <link href="jumbotron.css" rel="stylesheet">
-  </head>
+  <main role="main">
 
-  <body>
-
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(atual)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Desativado</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Item</a>
-              <a class="dropdown-item" href="#">Outro item</a>
-              <a class="dropdown-item" href="#">Algum outro item</a>
-            </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Pesquisa" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-        </form>
-      </div>
-    </nav>
-
-    <main role="main">
-
-      <!-- Principal jumbotron, para a principal mensagem de marketing ou call to action -->
-      <div class="jumbotron">
-        <div class="container">
-          <h1 class="display-3">Olá, mundo!</h1>
-          <p>Este é um template para um simples marketing ou website informacional. Ele inclui um callout grande (denominado jumbotron) e três conteúdos adicionais. Use-o como um ponto de partida para algo mais peculiar.</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Saiba mais &raquo;</a></p>
-        </div>
-      </div>
-
+    <div class="jumbotron">
       <div class="container">
-        <!-- Exemplo de linha de colunas -->
-        <div class="row">
-          <div class="col-md-4">
-            <h2>Título</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Título</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Título</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a></p>
-          </div>
+        <h1 class="display-3">Periféricos para Gamers!</h1>
+        <p>Descubra a melhor seleção de periféricos para melhorar a sua experiência de jogo. De teclados e mouses a fones de ouvido e cadeiras, temos tudo o que você precisa!</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Ver Produtos &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Teclados Mecânicos</h2>
+          <img src="https://via.placeholder.com/350x200?text=Teclado+Mecânico" class="img-fluid" alt="Teclado Mecânico">
+          <p>Explore nossa linha de teclados mecânicos com iluminação RGB e switches personalizáveis para um desempenho superior.</p>
+          <p><a class="btn btn-primary" href="#" role="button">Comprar agora &raquo;</a></p>
         </div>
+        <div class="col-md-4">
+          <h2>Mouses Gamer</h2>
+          <img src="https://via.placeholder.com/350x200?text=Mouse+Gamer" class="img-fluid" alt="Mouse Gamer">
+          <p>Encontre o mouse perfeito com alta precisão e design ergonômico para longas sessões de jogo.</p>
+          <p><a class="btn btn-primary" href="#" role="button">Comprar agora &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Headsets</h2>
+          <img src="https://via.placeholder.com/350x200?text=Headset" class="img-fluid" alt="Headset">
+          <p>Ouça cada detalhe com nossos headsets de alta qualidade, com som surround e microfones ajustáveis.</p>
+          <p><a class="btn btn-primary" href="#" role="button">Comprar agora &raquo;</a></p>
+        </div>
+      </div>
+      <hr>
+    </div>
 
-        <hr>
+  </main>
 
-      </div> <!-- /container -->
+  <footer class="container">
+    <p>&copy; GameGear 2024</p>
+  </footer>
 
-    </main>
-
-    <footer class="container">
-      <p>&copy; Companhia 2017-2018</p>
-    </footer>
-
-    <!-- Principal JavaScript do Bootstrap
-    ================================================== -->
-    <!-- Foi colocado no final para a página carregar mais rápido -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UOa5EnchP6A/6d9uStuhxR91U9IuF65/jH4pPQ1FwBc6d6Zl82c1r+3E1a5A3A8x" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-Ch7UuF6fD/B2y5JpH20w7pU4XKxJ9ENF9T8nNY34jJWFAi5wG2bhMZ5mLJlm2Q6" crossorigin="anonymous"></script>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      const button = document.querySelector('.btn-dark-mode');
+      if (document.body.classList.contains('dark-mode')) {
+        button.innerHTML = '🌞';
+        button.classList.remove('btn-light');
+        button.classList.add('btn-dark');
+      } else {
+        button.innerHTML = '🌙';
+        button.classList.remove('btn-dark');
+        button.classList.add('btn-light');
+      }
+    }
+  </script>
+</body>
 </html>
