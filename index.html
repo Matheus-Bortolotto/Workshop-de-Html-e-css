@@ -7,71 +7,13 @@
   <meta name="author" content="Seu Nome">
   <link rel="icon" href="favicon.ico">
   <link href="./css/carousel.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <title>Loja de Periféricos Gamers</title>
   <link rel="stylesheet" href="./css/style.css">
-  <style>
-    body {
-      transition: background-color 0.3s, color 0.3s;
-      background-color: #f0f0f0;
-    }
-    .navbar-dark .navbar-nav .nav-link {
-      color: #f8f9fa;
-    }
-    .navbar-dark .navbar-nav .nav-link:hover {
-      color: #adb5bd;
-    }
-    .jumbotron {
-      background-color: black;
-      background-size: cover;
-      color: #ffffff;
-      text-align: center;
-    }
-    .jumbotron h1 {
-      font-size: 3rem;
-      font-weight: bold;
-    }
-    .jumbotron p {
-      font-size: 1.25rem;
-      margin-bottom: 1.5rem;
-    }
-    .btn-primary {
-      background-color: #007bff;
-      border-color: #007bff;
-    }
-    .btn-primary:hover {
-      background-color: #0056b3;
-      border-color: #00408d;
-    }
-    .btn-secondary {
-      background-color: #6c757d;
-      border-color: #6c757d;
-    }
-    .btn-secondary:hover {
-      background-color: #5a6268;
-      border-color: #545b62;
-    }
-    .btn-dark-mode {
-      position: fixed;
-      top: 1rem;
-      right: 1rem;
-    }
-    .dark-mode {
-      background-color: #343a40;
-      color: #f8f9fa;
-    }
-    .dark-mode .navbar-dark .navbar-nav .nav-link {
-      color: #f8f9fa;
-    }
-    .dark-mode .jumbotron {
-      background-color:black ;
-      background-size: cover;
-      color: #ffffff;
-    }
-  </style>
 </head>
 <body>
 
@@ -86,9 +28,18 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(atual)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="categorias.html">Categorias</a>
+          <a class="nav-link" href="./pages/roupas.html">Roupas</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="./pages/beleza.html">Beleza</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/sustentaveis.html">Sustentaveis</a>
+        </li>
+        <li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/verde.html">Verde</a>
+          </li>
           <a class="nav-link" href="contato.html">Contato</a>
         </li>
         <li>
@@ -96,7 +47,7 @@
         </li>
       </ul>
     </div>
-    <button class="btn btn-dark-mode btn-light" onclick="toggleDarkMode()">🌙</button>
+    <i class="bi bi-cart-plus carrinho">Carrinho</i>
   </nav>
 
   <main role="main">
@@ -164,29 +115,29 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-5">
           <h2>Roupas e acessórios sustentáveis</h2>
-          <img src="https://via.placeholder.com/350x200?text=Teclado+Mecânico" class="img-fluid" alt="Teclado Mecânico">
+          <img src="https://www.reciclagemnomeioambiente.com.br/wp-content/uploads/2023/02/o-que-sao-roupas-sustentaveis-768x512.jpg" class="img-fluid" alt="Roupas e acessórios sustentáveis">
           <p>Explore nossa linha de teclados mecânicos com iluminação RGB e switches personalizáveis para um desempenho superior.</p>
-          <p><a class="btn btn-primary" href="teclado.html" role="button">Comprar agora &raquo;</a></p>
+          <p><a class="btn btn-primary" href="teclado.html" role="button">Ver produtos &raquo;</a></p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-5 beleza-container">
           <h2>Produtos de beleza e cuidados pessoais naturais</h2>
-          <img src="https://via.placeholder.com/350x200?text=Mouse+Gamer" class="img-fluid" alt="Mouse Gamer">
+          <img src="https://th.bing.com/th/id/OIP.XLqquGXY6vP9JMZwbIoEtAHaEK?rs=1&pid=ImgDetMain" class="img-fluid" alt="Produtos de beleza e cuidados pessoais naturais">
           <p>Encontre o mouse perfeito com alta precisão e design ergonômico para longas sessões de jogo.</p>
-          <p><a class="btn btn-primary" href="mouse.html" role="button">Comprar agora &raquo;</a></p>
+          <p><a class="btn btn-primary" href="mouse.html" role="button">Ver produtos &raquo;</a></p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-5">
           <h2>Itens para casa sustentáveis</h2>
-          <img src="https://via.placeholder.com/350x200?text=Headset" class="img-fluid" alt="Headset">
+          <img src="https://www.eusemfronteiras.com.br/wp-content/uploads/2016/06/53972054_m-810x540.jpg" class="img-fluid" alt="Itens para casa sustentáveis">
           <p>Ouça cada detalhe com nossos headsets de alta qualidade, com som surround e microfones ajustáveis.</p>
-          <p><a class="btn btn-primary" href="headset.html" role="button">Comprar agora &raquo;</a></p>
+          <p><a class="btn btn-primary" href="headset.html" role="button">Ver produtos &raquo;</a></p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-5">
           <h2>Tecnologia verde</h2>
-          <img src="https://via.placeholder.com/350x200?text=Headset" class="img-fluid" alt="Headset">
+          <img src="https://cceduc.com.br/wp-content/uploads/2021/04/1-10-1-768x512.jpg" class="img-fluid" alt="Tecnologia verde">
           <p>Ouça cada detalhe com nossos headsets de alta qualidade, com som surround e microfones ajustáveis.</p>
-          <p><a class="btn btn-primary" href="headset.html" role="button">Comprar agora &raquo;</a></p>
+          <p><a class="btn btn-primary" href="headset.html" role="button">Ver produtos &raquo;</a></p>
         </div>
       </div>
       <hr>
@@ -195,26 +146,11 @@
   </main>
 
   <footer class="container">
-    <p>&copy; GameGear 2024</p>
+    <p>&copy; EcoTrend 2024</p>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UOa5EnchP6A/6d9uStuhxR91U9IuF65/jH4pPQ1FwBc6d6Zl82c1r+3E1a5A3A8x" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-Ch7UuF6fD/B2y5JpH20w7pU4XKxJ9ENF9T8nNY34jJWFAi5wG2bhMZ5mLJlm2Q6" crossorigin="anonymous"></script>
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark-mode');
-      const button = document.querySelector('.btn-dark-mode');
-      if (document.body.classList.contains('dark-mode')) {
-        button.innerHTML = '🌞';
-        button.classList.remove('btn-light');
-        button.classList.add('btn-dark');
-      } else {
-        button.innerHTML = '🌙';
-        button.classList.remove('btn-dark');
-        button.classList.add('btn-light');
-      }
-    }
-  </script>
 </body>
 </html>
