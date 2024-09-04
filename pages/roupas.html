@@ -1,48 +1,144 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Loja de periféricos gamers">
-  <meta name="author" content="Seu Nome">
-  <link rel="icon" href="favicon.ico">
-  <link href="./css/carousel.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <title>Loja de Periféricos Gamers</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../../../favicon.ico">
   <link rel="stylesheet" href="../css/roupas.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>Beleza</title>
+
+  <!-- Principal CSS do Bootstrap -->
+  <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos customizados para este template -->
+  <link href="album.css" rel="stylesheet">
 </head>
+
 <body>
 
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">EcoTrend</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="../index.html">Home <span class="sr-only">(atual)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="beleza.html">Beleza</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="sustentaveis.html">Sustentaveis</a>
-        </li>
-        <li class="nav-item">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">EcoTrend</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(atual)</span></a>
+          </li>
           <li class="nav-item">
-            <a class="nav-link" href="verde.html">Verde</a>
+            <a class="nav-link" href="./pages/roupas.html">Roupas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/beleza.html">Beleza</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/sustentaveis.html">Sustentaveis</a>
+          </li>
+          <li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/verde.html">Verde</a>
           </li>
           <a class="nav-link" href="contato.html">Contato</a>
-        </li>
-        <li>
-          <img src="https://cloudfront.safaribookings.com/operators/logos/eco_trends_logo_1466423565.gif" alt="" class="logo">
-        </li>
-      </ul>
-    </div>
-    <i class="bi bi-cart-plus carrinho">Carrinho</i>
-  </nav>
+          </li>
+          <li>
+            <img src="https://cloudfront.safaribookings.com/operators/logos/eco_trends_logo_1466423565.gif" alt="" class="logo">
+          </li>
+        </ul>
+      </div>
+      <i class="bi bi-cart-plus carrinho">Carrinho</i>
+    </nav>
+  </header>
+
+  <main role="main">
+
+    <section class="jumbotron text-center ">
+      <div class="container">
+        <h1 class="jumbotron-heading">Ache aqui sua roupa ideal</h1>
+      </div>
+    </section>
+
+
+    <section class="categoria">
+      <h1 class="titulo">ROUPAS</h1>
+
+      <div class="produtos">
+        <div class="item">
+          <img src="../imagens/camiseta1img1.png" alt="">
+          <h4>CAMISETA ADIDAS FEMININA</h4>
+
+          <button class="btn-compra">
+            <a href="./produtos/roupaProduto1.html">VER PRODUTO</a>
+          </button>
+        </div>
+
+        <div class="item">
+          <img src="../imagens/calcaimg1.png" alt="">
+          <h4>CALÇA BRANCA ADIDAS</h4>
+
+          <button class="btn-compra">
+            <a href="./produtos/roupaProduto2.html">VER PRODUTO</a>
+          </button>
+        </div>
+
+        <div class="item">
+          <img src="../imagens/camiseta1img2.png" alt="">
+          <h4>CAMISETA ADIDAS MASCULINA</h4>
+
+          <button class="btn-compra">
+            <a href="./produtos/roupaProduto3.html">VER PRODUTO</a>
+          </button>
+        </div>
+
+        <div class="item">
+          <img src="../imagens/calcaimg2.png" alt="">
+          <h4>CALÇA FEMININA ADIDAS</h4>
+
+          <button class="btn-compra">
+            <a href="./produtos/roupasProdutos4.html">VER PRODUTO</a>
+          </button>
+        </div>
+
+        <div class="item">
+          <img src="../imagens/camiseta2img1.png" alt="">
+          <h4>CAMISETA BRANCA FEMININA ADIDAS</h4>
+
+          <button class="btn-compra">VER PRODUTO</button>
+        </div>
+
+        <div class="item">
+          <img src="../imagens/camiseta2img2.png" alt="">
+          <h4>CAMISETA MASCULINA BRANCA ADIDAS</h4>
+
+          <button class="btn-compra">VER PRODUTO</button>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+  <!-- Principal JavaScript do Bootstrap
+    ================================================== -->
+  <!-- Foi colocado no final para a página carregar mais rápido -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="../../assets/js/vendor/popper.min.js"></script>
+  <script src="../../dist/js/bootstrap.min.js"></script>
+  <script src="../../assets/js/vendor/holder.min.js"></script>
+</body>
+
+</html>
