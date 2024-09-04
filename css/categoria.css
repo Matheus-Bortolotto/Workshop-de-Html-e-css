@@ -4,11 +4,36 @@
     box-sizing: border-box;
 }
 
-.produtos{
+.logo{
+    display: flex;
+    max-width:80px;
+    max-height:100px;
+    width: auto;
+    height: auto;
+}
 
+.carrinho {
+    color: white;
+}
+
+.jumbotron{
+    height: 250px;
+    background-size: cover;
+    background-image:url(https://i.pinimg.com/1200x/4d/e2/c8/4de2c8800448863922f15e7f5b844a65.jpg);
+    
+    
+    
+}
+.jumbotron-heading{
+    color: white;
+    
+}
+
+.produtos{
+    margin: 1%;
     display: grid;
-    grid-template-columns: repeat(3,550px) ;
-    grid-template-rows: repeat(3,750px);
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(3,1fr);
     gap: 1%;
     justify-content: center;
 
@@ -31,7 +56,11 @@
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     z-index: 10;
-    bottom: 12%;
+    justify-content: center;
+    height: 10fr;
+    bottom: 5rem;
+    transform: translateX(-50%);
+    left: 50%;
 
 }
 .titulo{
@@ -48,11 +77,11 @@ img{
 .btn-compra{
     
 
-    padding: 0.5rem 1rem;
+    
     border-radius: 50px;
     width: 30%;
-    font-size: xx-large;
-    margin-top: 2rem
+    font-size: x-large;
+    margin-top: 2rem;
 
 
 }
