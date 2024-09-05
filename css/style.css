@@ -1,21 +1,65 @@
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+  background-color: #f4f7f6;
+}
+
+.navbar-dark.bg-dark {
+  background-color: #3a5f3a !important;
+  border-bottom: 2px solid #ffffff;
+}
+
+.navbar-brand {
+  color: #ffffff;
+}
+
+.nav-link {
+  color: #f0f5f3;
+}
+
+.nav-link:hover {
+  color: #d7e9e2;
+}
+
+.carrinho {
+  color: #ffffff;
+}
+
 .logo {
-  display: flex;
   max-width: 80px;
   max-height: 100px;
   width: auto;
   height: auto;
 }
 
-.carrinho {
-  color: white;
+.btn-primary {
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
 }
 
+.btn-primary:hover {
+  background-color: #218838 !important;
+  border-color: #1e7e34 !important;
+}
+
+.btn-verde {
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+  color: white !important;
+}
+
+.btn-verde:hover {
+  background-color: #218838 !important;
+  border-color: #1e7e34 !important;
+}
+
+/* Footer */
 .site-footer {
-  background-color: #28a745;
+  background-color: #3a5f3a;
   padding: 40px 0;
   color: #ffffff;
   text-align: left;
-  margin-top: 150px;
 }
 
 .site-footer h6 {
@@ -30,17 +74,17 @@
 }
 
 .footer-links li {
-  color: #000;
-  line-height: 2;
+  color: #ffffff;
 }
 
 .footer-links li a {
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .footer-links li a:hover {
   text-decoration: underline;
+  color: #c2ded1;
 }
 
 .social-icons li {
@@ -49,11 +93,87 @@
 }
 
 .social-icons li a {
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .social-icons li a:hover {
   text-decoration: underline;
-  color: #ffffff;
+  color: #c2ded1;
+}
+
+/* Estilos gerais para telas grandes (desktop) */
+@media (min-width: 992px) {
+  .navbar-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Estilos para tablets (768px a 991px) */
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .col-md-5 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/* Estilos para celulares (até 767px) */
+@media (max-width: 767px) {
+  .navbar-brand {
+    font-size: 24px;
+  }
+
+  .navbar-nav {
+    display: block;
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 60px;
+    max-height: 80px;
+  }
+
+  .col-md-5 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  footer .col-sm-4 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .footer-links,
+  .social-icons {
+    text-align: center;
+  }
+
+  .footer-links li,
+  .social-icons li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Ajustes para muito pequenos (até 575px) */
+@media (max-width: 575px) {
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .footer-links li,
+  .social-icons li {
+    margin-bottom: 5px;
+  }
 }
