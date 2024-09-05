@@ -11,10 +11,11 @@
 }
 
 .site-footer {
-  background-color: #343a40;
+  background-color: #28a745;
   padding: 40px 0;
   color: #ffffff;
   text-align: left;
+  margin-top: 150px;
 }
 
 .site-footer h6 {
@@ -29,12 +30,12 @@
 }
 
 .footer-links li {
-  color: #ffffff;
+  color: #000;
   line-height: 2;
 }
 
 .footer-links li a {
-  color: #ffffff;
+  color: #000;
   text-decoration: none;
 }
 
@@ -48,11 +49,11 @@
 }
 
 .social-icons li a {
-  color: #ffffff;
+  color: #000;
   text-decoration: none;
 }
 
 .social-icons li a:hover {
   text-decoration: underline;
-  color: #28a745;
+  color: #ffffff;
 }
