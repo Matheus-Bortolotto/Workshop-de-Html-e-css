@@ -6,36 +6,53 @@ body {
     padding-top: 3rem;
     padding-bottom: 3rem;
     color: #5a5a5a;
+    
   }
   
   
   /* CUSTOMIZA O CAROUSEL
   -------------------------------------------------- */
   
-  /* Classe base do carousel */
-  .carousel {
-    margin-bottom: 4rem;
-  }
-  
-  /* Já que usamos posicionamento de imagens, precisaremos fazer alguns ajustes na legenda */
-  .carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
-  }
-  
-  /* Declaramos alturas, devido ao posicionamento do elemento img */
-  .carousel-item {
-    height: 50rem;
-    background-color: #777;
-  }
-  .carousel-item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 32rem;
-  }
-  
+/* CUSTOMIZA O CAROUSEL
+-------------------------------------------------- */
+
+/* Classe base do carousel */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+/* Ajusta a legenda do carousel */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+.carousel-caption h1{
+  color: rgb(255, 255, 255);
+/* background-color: rgba(255, 255, 255, 0.37); */
+}
+
+/* Configura o tamanho do item do carousel */
+.carousel-item {
+  height: 50rem; /* Altura do item do carousel */
+  background-color: #777; /* Cor de fundo padrão */
+  position: relative; /* Necessário para o posicionamento da imagem */
+}
+
+/* Ajusta a imagem para ocupar todo o espaço do item do carousel */
+.carousel-item img {
+  position: absolute; /* Posiciona a imagem absolutamente dentro do contêiner */
+  top: 0;
+  left: 0;
+  width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+  height: 100%; /* Faz a imagem ocupar toda a altura do contêiner */
+  object-fit: cover; /* Ajusta a imagem para cobrir o contêiner, mantendo a proporção */
+}
+
+/* Configuração específica para a primeira imagem do slide */
+.carousel-item .first-slide {
+  object-fit: cover; /* Garante que a imagem cubra o contêiner */
+}
+
   
   /* CONTEÚDO DO MARKETING
   -------------------------------------------------- */
